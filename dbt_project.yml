@@ -25,6 +25,14 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+vars:
+  snowplow_web:
+    snowplow__start_date: '2022-08-19'
+    snowplow__enable_iab: true
+    snowplow__enable_ua: true
+    snowplow__enable_yauaa: true
+    snowplow__events: 'atomic.sample_events_web'
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
